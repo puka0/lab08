@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Количество: 0" />
+
+    <TextView
+        android:id="@+id/textKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/key"
+        tools:text="@string/key" />
+
+    <EditText
+        android:id="@+id/key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/value"
+        tools:text="@string/value" />
+
+    <EditText
+        android:id="@+id/value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bntInsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onInsertClick"
+            android:text="@string/insert"
+            tools:text="@string/insert" />
+
+        <Button
+            android:id="@+id/btnSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onSelectClick"
+            android:text="@string/select"
+            tools:targetApi="@string/select" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onUpdateClick"
+            android:text="@string/update"
+            tools:text="@string/update" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onDeleteClick"
+            android:text="@string/delete"
+            tools:text="@string/delete" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDropAll"
+        android:layout_width="149dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onDropAllClick"
+        android:text="@string/dropAll"
+        tools:text="@string/dropAll" />
+
+</LinearLayout>

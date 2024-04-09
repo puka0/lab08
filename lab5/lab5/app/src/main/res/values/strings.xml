@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">lab5</string>
+    <string name="Dialog">Open Dialog</string>
+    <string name="Exit">Exit App</string>
+    <string name="Name">ArtemYakovskij</string>
+    <string name="Okey">Ok</string>
+    <string name="Closing">Close</string>
+    <string name="Hellows">Hello!</string>
+    <string name="secondCheck">Богатый</string>
+    <string name="firstCheck">Успешный</string>
+
+</resources>
